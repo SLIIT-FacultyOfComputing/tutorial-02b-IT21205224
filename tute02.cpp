@@ -16,11 +16,13 @@ Please Note that the input command in C++ is std::cin. This is a representation 
 using namespacing std;
 int main()
 {
-  double salary,netsalary;
+  double salary,netSalary;
   int etype,otHrs,otRate;
   cout<<"Enter Employee type:";
   cin>>etype;
-  cout<<"Enter OTHrs:";
+  cout<<"Enter Salary:";
+	cin>>salary;
+  cout<<"Enter OtHrs:";
   cin>>otHrs;
   switch(etype)
     {
@@ -33,6 +35,7 @@ int main()
       otRate=1700;
       break;
     }
-  netSalary=salary+otHours*otRate;
-  cout<<"Net Sallary is"<<Netsallary;
+  netSalary=salary+otHrs*otRate;
+  cout<<"netSalary is"<<netSalary;
+  return 0;
 }
